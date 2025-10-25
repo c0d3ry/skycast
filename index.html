@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>My Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form>
+          <input
+            class="enter-city"
+            type="text"
+            id="enter-city-here"
+            placeholder="Enter a city.."
+            required
+          />
+          <input class="search" type="submit" value="Search" />
+        </form>
+      </header>
+      <hr />
+      <section>
+        <div class="current-details">
+          <div class="">
+            <h1 class="city">London</h1>
+            <p class="weather-details">
+              <span class="day-time"> Thursday 09:30 </span>, overcast clouds
+              <br />
+              Humidity: <strong>72%</strong>, Wind:
+              <strong>2.06km/h</strong>
+            </p>
+          </div>
+          <div class="current-temp">
+            <span class="emoji">☁️</span><span class="temp">15</span
+            ><span class="celsius-symbol">°C</span>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <footer>
+        <p>
+          This is a personal project by c0d3ry and is on
+          <a href="#">GitHub</a> and
+          <a href="#">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
